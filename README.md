@@ -10,6 +10,7 @@
 * CoinGecko API
 * Axios 
 * Bootstrap
+* React-Icons
 
 ## Future features:
 

@@ -2,6 +2,8 @@ import {useEffect, useState} from 'react';
 import './App.css';
 import axios from 'axios';
 import TableCoins from './components/TableCoins';
+import { FaReact } from 'react-icons/fa' 
+
 
 
 function App() {
@@ -23,6 +25,7 @@ function App() {
   return (
     <div className="container">
       <div className='row'>
+        <h1 className='text-center mt-4 text-light'><FaReact /> React Crypto Prices</h1>
         <input type="text" placeholder="Search a Coin" className="form-control bg-dark text-light border-0 mt-4 text-center" onChange={e => setsearch(e.target.value)}/>
         <TableCoins coins={coins} search={search}></TableCoins>
       </div>
